@@ -6,23 +6,24 @@
     <title>Franse Huizen Tool - Prijzen Checker & Valkuilen Checklist</title>
     <meta name="description" content="Controleer huizenprijzen in Frankrijk en vermijd valkuilen bij de aankoop. Gebaseerd op 30+ jaar ervaring en officiële DVF data.">
     
-    <!-- Tailwind CSS (test versie, niet voor productie) -->
+    <!-- Tailwind CSS (alleen test/ontwikkel, niet productie) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- React & ReactDOM (UMD builds) -->
+    <!-- React & ReactDOM (unpkg CDN voor development!) -->
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     
-    <!-- Babel Standalone (voor JSX) -->
+    <!-- Babel Standalone voor JSX (alleen in-browser development, niet productie) -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
     <style>
-        body {margin:0; font-family:sans-serif;}
+        body { margin:0; font-family:sans-serif; background:#f4f4f4; }
     </style>
 </head>
 <body>
     <div id="root"></div>
     <script type="text/babel">
+        // DEMO COMPONENT: Vervang deze door je eigen code!
         function FranseHuizenTool() {
             return (
                 <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
@@ -41,6 +42,7 @@
             );
         }
 
+        // Start de app:
         ReactDOM.render(<FranseHuizenTool />, document.getElementById('root'));
     </script>
 </body>
